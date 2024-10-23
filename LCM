@@ -1,0 +1,17 @@
+#include<stdio.h>
+void main()
+{
+    int a,b;
+    printf("Enter the numbers:");
+    scanf("%d%d",&a,&b);
+    int bno=a>b?a:b;
+    int sum=bno;
+    while(1)
+    {
+        if(bno%a==0 && bno%b==0)
+            break;
+        else
+            sum=sum+bno;
+    }
+    printf("LCM is %d",sum);
+}
